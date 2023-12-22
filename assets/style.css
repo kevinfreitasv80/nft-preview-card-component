@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    --color1: hsl(217, 54%, 11%);
+    --color2: hsl(216, 50%, 16%);
+    --color3: hsl(215, 32%, 27%);
+    --color4: hsl(215, 51%, 70%);
+    --color5: hsl(178, 100%, 50%);
+    --color6: hsl(0, 0%, 100%);
+}
+body{
+    margin: 0;
+    background: var(--color1);
+    color: var(--color4);
+    font-family: "Outfit", Arial, sans-serif;
+    font-weight: 300;
+}
+main, .imageEquilibrium, .viewDiv{
+    border-radius: .5em;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1em;
+    transform: translate(-50%, -50%);
+    background: var(--color2);
+}
+.imageEquilibrium{
+    width: 16.625em;
+}
+.description{
+    max-width: 15.75em;
+}
+.sectionPriceTime{
+    justify-content: space-between;
+}
+.sectionPriceTime, .sectionPriceTime article, .avatar{
+    display: flex;
+    align-items: center;
+}
+.sectionPriceTime img{
+    margin-right: .5em;
+}
+hr{
+    border: .0625em solid var(--color3);
+}
+.imgAvatar{
+    width: 30px;
+    height: 30px;
+    background: var(--color6);
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 1em;
+}
+.blue{
+    color: var(--color6);
+    transition: .4s;
+}
+.blue:hover{
+    cursor: pointer;
+    color: var(--color5);
+}
+.color2{
+    color: var(--color5);
+    font-weight: 600;
+}
+.imgEqui{
+    position: relative;
+}
+.imgEqui:hover>.viewDiv{
+    opacity: 1;
+}
+.viewDiv{
+    opacity: 0;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    width: 16.625em;
+    height: 16.625em;
+    background: #00fff799;
+}
+.view{
+    display: block;
+    margin: 7em auto 0;
+}
+@media screen and (max-width: 20.3125em) {
+    
+}
